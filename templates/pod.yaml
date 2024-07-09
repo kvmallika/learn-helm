@@ -8,4 +8,5 @@ spec:
       image: {{ .Values.image_name }}
       ports:
       {{ - range . Values.ports }}
-        - containerPort: {{ . }}
+      - containerPort: {{ . }}
+      {{ - end }}
